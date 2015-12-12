@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__22-[DAO makeListRequest]_block_invoke_2:DAO.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[DownloadViewController viewDidLoad]:DownloadViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ViewController reloadTableView]:ViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ViewController setEditing:animated:]:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.editing">
+            </PersistentString>
+            <PersistentString
+               value = "self.tableView.editing">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ViewController prepareForSegue:sender:]:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "segue.destinationViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__28-[DAO downloadFromAmazonS3:]_block_invoke:DAO.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[UploadViewController uploadImageToAmazon:]:UploadViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ViewController tableView:cellForRowAtIndexPath:]:ViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ViewController tableView:didSelectRowAtIndexPath:]:ViewController.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

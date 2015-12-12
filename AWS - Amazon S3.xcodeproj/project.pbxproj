@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27212E691BCEE3D0006AD158 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27212E681BCEE3D0006AD158 /* main.m */; };
+		27212E6C1BCEE3D0006AD158 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27212E6B1BCEE3D0006AD158 /* AppDelegate.m */; };
+		27212E6F1BCEE3D0006AD158 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27212E6E1BCEE3D0006AD158 /* ViewController.m */; };
+		27212E721BCEE3D0006AD158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27212E701BCEE3D0006AD158 /* Main.storyboard */; };
+		27212E741BCEE3D0006AD158 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27212E731BCEE3D0006AD158 /* Images.xcassets */; };
+		27212E771BCEE3D0006AD158 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27212E751BCEE3D0006AD158 /* LaunchScreen.xib */; };
+		272D2E711BD5617B00E2B5EE /* DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 272D2E701BD5617B00E2B5EE /* DAO.m */; };
+		274DCC5F1BD042540001343D /* AWSAPIGateway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC4B1BD042540001343D /* AWSAPIGateway.framework */; };
+		274DCC601BD042540001343D /* AWSAutoScaling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC4C1BD042540001343D /* AWSAutoScaling.framework */; };
+		274DCC611BD042540001343D /* AWSCloudWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC4D1BD042540001343D /* AWSCloudWatch.framework */; };
+		274DCC621BD042540001343D /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC4E1BD042540001343D /* AWSCore.framework */; };
+		274DCC631BD042540001343D /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC4F1BD042540001343D /* AWSDynamoDB.framework */; };
+		274DCC641BD042540001343D /* AWSEC2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC501BD042540001343D /* AWSEC2.framework */; };
+		274DCC651BD042540001343D /* AWSElasticLoadBalancing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC511BD042540001343D /* AWSElasticLoadBalancing.framework */; };
+		274DCC661BD042540001343D /* AWSKinesis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC521BD042540001343D /* AWSKinesis.framework */; };
+		274DCC671BD042540001343D /* AWSLambda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC531BD042540001343D /* AWSLambda.framework */; };
+		274DCC681BD042540001343D /* AWSMachineLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC541BD042540001343D /* AWSMachineLearning.framework */; };
+		274DCC691BD042540001343D /* AWSMobileAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC551BD042540001343D /* AWSMobileAnalytics.framework */; };
+		274DCC6A1BD042540001343D /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC561BD042540001343D /* AWSS3.framework */; };
+		274DCC6B1BD042540001343D /* AWSSES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC571BD042540001343D /* AWSSES.framework */; };
+		274DCC6C1BD042540001343D /* AWSSimpleDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC581BD042540001343D /* AWSSimpleDB.framework */; };
+		274DCC6D1BD042540001343D /* AWSSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC591BD042540001343D /* AWSSNS.framework */; };
+		274DCC6E1BD042540001343D /* AWSSQS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC5A1BD042540001343D /* AWSSQS.framework */; };
+		274DCC6F1BD042540001343D /* Amazon Software License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 274DCC5C1BD042540001343D /* Amazon Software License.txt */; };
+		274DCC701BD042540001343D /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274DCC5D1BD042540001343D /* AWSCognito.framework */; };
+		274DCC711BD042540001343D /* NOTICE in Resources */ = {isa = PBXBuildFile; fileRef = 274DCC5E1BD042540001343D /* NOTICE */; };
+		27559EFA1BD1690D00816682 /* UploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27559EF91BD1690D00816682 /* UploadViewController.m */; };
+		27559EFD1BD1692200816682 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27559EFC1BD1692200816682 /* DownloadViewController.m */; };
+		278E536D1BD043C1002C7AAA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 278E536C1BD043C1002C7AAA /* SystemConfiguration.framework */; };
+		278E536F1BD043D1002C7AAA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 278E536E1BD043D1002C7AAA /* libsqlite3.dylib */; };
+		278E53711BD043DD002C7AAA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 278E53701BD043DD002C7AAA /* libz.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27212E631BCEE3D0006AD158 /* AWS - Amazon S3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AWS - Amazon S3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27212E671BCEE3D0006AD158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27212E681BCEE3D0006AD158 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27212E6A1BCEE3D0006AD158 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		27212E6B1BCEE3D0006AD158 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		27212E6D1BCEE3D0006AD158 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		27212E6E1BCEE3D0006AD158 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		27212E711BCEE3D0006AD158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27212E731BCEE3D0006AD158 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		27212E761BCEE3D0006AD158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		27212E811BCEE3D0006AD158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27212E821BCEE3D0006AD158 /* Amazon_S3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Amazon_S3.m; sourceTree = "<group>"; };
+		272D2E6F1BD5617A00E2B5EE /* DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAO.h; sourceTree = "<group>"; };
+		272D2E701BD5617B00E2B5EE /* DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAO.m; sourceTree = "<group>"; wrapsLines = 0; };
+		274DCC4B1BD042540001343D /* AWSAPIGateway.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSAPIGateway.framework; path = frameworks/AWSAPIGateway.framework; sourceTree = "<group>"; };
+		274DCC4C1BD042540001343D /* AWSAutoScaling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSAutoScaling.framework; path = frameworks/AWSAutoScaling.framework; sourceTree = "<group>"; };
+		274DCC4D1BD042540001343D /* AWSCloudWatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCloudWatch.framework; path = frameworks/AWSCloudWatch.framework; sourceTree = "<group>"; };
+		274DCC4E1BD042540001343D /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = frameworks/AWSCore.framework; sourceTree = "<group>"; };
+		274DCC4F1BD042540001343D /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSDynamoDB.framework; path = frameworks/AWSDynamoDB.framework; sourceTree = "<group>"; };
+		274DCC501BD042540001343D /* AWSEC2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSEC2.framework; path = frameworks/AWSEC2.framework; sourceTree = "<group>"; };
+		274DCC511BD042540001343D /* AWSElasticLoadBalancing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSElasticLoadBalancing.framework; path = frameworks/AWSElasticLoadBalancing.framework; sourceTree = "<group>"; };
+		274DCC521BD042540001343D /* AWSKinesis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSKinesis.framework; path = frameworks/AWSKinesis.framework; sourceTree = "<group>"; };
+		274DCC531BD042540001343D /* AWSLambda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSLambda.framework; path = frameworks/AWSLambda.framework; sourceTree = "<group>"; };
+		274DCC541BD042540001343D /* AWSMachineLearning.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSMachineLearning.framework; path = frameworks/AWSMachineLearning.framework; sourceTree = "<group>"; };
+		274DCC551BD042540001343D /* AWSMobileAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSMobileAnalytics.framework; path = frameworks/AWSMobileAnalytics.framework; sourceTree = "<group>"; };
+		274DCC561BD042540001343D /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = frameworks/AWSS3.framework; sourceTree = "<group>"; };
+		274DCC571BD042540001343D /* AWSSES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSES.framework; path = frameworks/AWSSES.framework; sourceTree = "<group>"; };
+		274DCC581BD042540001343D /* AWSSimpleDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSimpleDB.framework; path = frameworks/AWSSimpleDB.framework; sourceTree = "<group>"; };
+		274DCC591BD042540001343D /* AWSSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSNS.framework; path = frameworks/AWSSNS.framework; sourceTree = "<group>"; };
+		274DCC5A1BD042540001343D /* AWSSQS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSQS.framework; path = frameworks/AWSSQS.framework; sourceTree = "<group>"; };
+		274DCC5C1BD042540001343D /* Amazon Software License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Amazon Software License.txt"; sourceTree = "<group>"; };
+		274DCC5D1BD042540001343D /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognito.framework; sourceTree = "<group>"; };
+		274DCC5E1BD042540001343D /* NOTICE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
+		27559EF81BD1690D00816682 /* UploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadViewController.h; sourceTree = "<group>"; };
+		27559EF91BD1690D00816682 /* UploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadViewController.m; sourceTree = "<group>"; };
+		27559EFB1BD1692200816682 /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		27559EFC1BD1692200816682 /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		278E536C1BD043C1002C7AAA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		278E536E1BD043D1002C7AAA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		278E53701BD043DD002C7AAA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27212E601BCEE3D0006AD158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				278E53711BD043DD002C7AAA /* libz.dylib in Frameworks */,
+				278E536F1BD043D1002C7AAA /* libsqlite3.dylib in Frameworks */,
+				278E536D1BD043C1002C7AAA /* SystemConfiguration.framework in Frameworks */,
+				274DCC611BD042540001343D /* AWSCloudWatch.framework in Frameworks */,
+				274DCC6D1BD042540001343D /* AWSSNS.framework in Frameworks */,
+				274DCC701BD042540001343D /* AWSCognito.framework in Frameworks */,
+				274DCC661BD042540001343D /* AWSKinesis.framework in Frameworks */,
+				274DCC621BD042540001343D /* AWSCore.framework in Frameworks */,
+				274DCC691BD042540001343D /* AWSMobileAnalytics.framework in Frameworks */,
+				274DCC671BD042540001343D /* AWSLambda.framework in Frameworks */,
+				274DCC5F1BD042540001343D /* AWSAPIGateway.framework in Frameworks */,
+				274DCC601BD042540001343D /* AWSAutoScaling.framework in Frameworks */,
+				274DCC631BD042540001343D /* AWSDynamoDB.framework in Frameworks */,
+				274DCC6C1BD042540001343D /* AWSSimpleDB.framework in Frameworks */,
+				274DCC6A1BD042540001343D /* AWSS3.framework in Frameworks */,
+				274DCC651BD042540001343D /* AWSElasticLoadBalancing.framework in Frameworks */,
+				274DCC681BD042540001343D /* AWSMachineLearning.framework in Frameworks */,
+				274DCC641BD042540001343D /* AWSEC2.framework in Frameworks */,
+				274DCC6E1BD042540001343D /* AWSSQS.framework in Frameworks */,
+				274DCC6B1BD042540001343D /* AWSSES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27212E5A1BCEE3D0006AD158 = {
+			isa = PBXGroup;
+			children = (
+				27212E651BCEE3D0006AD158 /* Amazon S3 */,
+				27212E7F1BCEE3D0006AD158 /* Amazon S3 Tests */,
+				27212E641BCEE3D0006AD158 /* Products */,
+				27F5141C1C1B93FD00B3C285 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		27212E641BCEE3D0006AD158 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27212E631BCEE3D0006AD158 /* AWS - Amazon S3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27212E651BCEE3D0006AD158 /* Amazon S3 */ = {
+			isa = PBXGroup;
+			children = (
+				27212E6A1BCEE3D0006AD158 /* AppDelegate.h */,
+				27212E6B1BCEE3D0006AD158 /* AppDelegate.m */,
+				272D2E6F1BD5617A00E2B5EE /* DAO.h */,
+				272D2E701BD5617B00E2B5EE /* DAO.m */,
+				27212E6D1BCEE3D0006AD158 /* ViewController.h */,
+				27212E6E1BCEE3D0006AD158 /* ViewController.m */,
+				27559EF81BD1690D00816682 /* UploadViewController.h */,
+				27559EF91BD1690D00816682 /* UploadViewController.m */,
+				27559EFB1BD1692200816682 /* DownloadViewController.h */,
+				27559EFC1BD1692200816682 /* DownloadViewController.m */,
+				27212E701BCEE3D0006AD158 /* Main.storyboard */,
+				27212E731BCEE3D0006AD158 /* Images.xcassets */,
+				27212E751BCEE3D0006AD158 /* LaunchScreen.xib */,
+				27212E661BCEE3D0006AD158 /* Supporting Files */,
+			);
+			name = "Amazon S3";
+			path = "Amazon S3 ";
+			sourceTree = "<group>";
+		};
+		27212E661BCEE3D0006AD158 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27212E671BCEE3D0006AD158 /* Info.plist */,
+				27212E681BCEE3D0006AD158 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27212E7F1BCEE3D0006AD158 /* Amazon S3 Tests */ = {
+			isa = PBXGroup;
+			children = (
+				27212E821BCEE3D0006AD158 /* Amazon_S3.m */,
+				27212E811BCEE3D0006AD158 /* Info.plist */,
+			);
+			path = "Amazon S3 Tests";
+			sourceTree = "<group>";
+		};
+		274DCC5B1BD042540001343D /* extras */ = {
+			isa = PBXGroup;
+			children = (
+				274DCC5C1BD042540001343D /* Amazon Software License.txt */,
+				274DCC5D1BD042540001343D /* AWSCognito.framework */,
+				274DCC5E1BD042540001343D /* NOTICE */,
+			);
+			name = extras;
+			path = frameworks/extras;
+			sourceTree = "<group>";
+		};
+		27F5141C1C1B93FD00B3C285 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				278E53701BD043DD002C7AAA /* libz.dylib */,
+				278E536E1BD043D1002C7AAA /* libsqlite3.dylib */,
+				278E536C1BD043C1002C7AAA /* SystemConfiguration.framework */,
+				274DCC4B1BD042540001343D /* AWSAPIGateway.framework */,
+				274DCC4C1BD042540001343D /* AWSAutoScaling.framework */,
+				274DCC4D1BD042540001343D /* AWSCloudWatch.framework */,
+				274DCC4E1BD042540001343D /* AWSCore.framework */,
+				274DCC4F1BD042540001343D /* AWSDynamoDB.framework */,
+				274DCC501BD042540001343D /* AWSEC2.framework */,
+				274DCC511BD042540001343D /* AWSElasticLoadBalancing.framework */,
+				274DCC521BD042540001343D /* AWSKinesis.framework */,
+				274DCC531BD042540001343D /* AWSLambda.framework */,
+				274DCC541BD042540001343D /* AWSMachineLearning.framework */,
+				274DCC551BD042540001343D /* AWSMobileAnalytics.framework */,
+				274DCC561BD042540001343D /* AWSS3.framework */,
+				274DCC571BD042540001343D /* AWSSES.framework */,
+				274DCC581BD042540001343D /* AWSSimpleDB.framework */,
+				274DCC591BD042540001343D /* AWSSNS.framework */,
+				274DCC5A1BD042540001343D /* AWSSQS.framework */,
+				274DCC5B1BD042540001343D /* extras */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27212E621BCEE3D0006AD158 /* AWS - Amazon S3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27212E861BCEE3D0006AD158 /* Build configuration list for PBXNativeTarget "AWS - Amazon S3" */;
+			buildPhases = (
+				27212E5F1BCEE3D0006AD158 /* Sources */,
+				27212E601BCEE3D0006AD158 /* Frameworks */,
+				27212E611BCEE3D0006AD158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AWS - Amazon S3";
+			productName = "Amazon Part 1";
+			productReference = 27212E631BCEE3D0006AD158 /* AWS - Amazon S3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27212E5B1BCEE3D0006AD158 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Nina Yang";
+				TargetAttributes = {
+					27212E621BCEE3D0006AD158 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 54NG99V3HC;
+					};
+				};
+			};
+			buildConfigurationList = 27212E5E1BCEE3D0006AD158 /* Build configuration list for PBXProject "AWS - Amazon S3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27212E5A1BCEE3D0006AD158;
+			productRefGroup = 27212E641BCEE3D0006AD158 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27212E621BCEE3D0006AD158 /* AWS - Amazon S3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27212E611BCEE3D0006AD158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274DCC711BD042540001343D /* NOTICE in Resources */,
+				27212E721BCEE3D0006AD158 /* Main.storyboard in Resources */,
+				274DCC6F1BD042540001343D /* Amazon Software License.txt in Resources */,
+				27212E771BCEE3D0006AD158 /* LaunchScreen.xib in Resources */,
+				27212E741BCEE3D0006AD158 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27212E5F1BCEE3D0006AD158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27212E6F1BCEE3D0006AD158 /* ViewController.m in Sources */,
+				27559EFA1BD1690D00816682 /* UploadViewController.m in Sources */,
+				27212E6C1BCEE3D0006AD158 /* AppDelegate.m in Sources */,
+				27212E691BCEE3D0006AD158 /* main.m in Sources */,
+				27559EFD1BD1692200816682 /* DownloadViewController.m in Sources */,
+				272D2E711BD5617B00E2B5EE /* DAO.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		27212E701BCEE3D0006AD158 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27212E711BCEE3D0006AD158 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27212E751BCEE3D0006AD158 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27212E761BCEE3D0006AD158 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27212E841BCEE3D0006AD158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27212E851BCEE3D0006AD158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27212E871BCEE3D0006AD158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ninaqy13/Documents/Turn,
+					to,
+					"Tech/11-Amazon/aws-ios-sdk-2.2.7/frameworks",
+					/Users/ninaqy13/Documents/Turn,
+					to,
+					"Tech/11-Amazon/aws-ios-sdk-2.2.7/frameworks/extras",
+					/Users/ninaqy13/Documents/Turn,
+					to,
+					"Tech/11-Amazon/aws-ios-sdk-2.2.7/frameworks",
+					/Users/ninaqy13/Documents/Turn,
+					to,
+					"Tech/11-Amazon/aws-ios-sdk-2.2.7/frameworks/extras",
+					"$(PROJECT_DIR)/frameworks",
+					"$(PROJECT_DIR)/frameworks/extras",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Amazon S3 /Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "AWS - Amazon S3";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		27212E881BCEE3D0006AD158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ninaqy13/Documents/Turn,
+					to,
+					"Tech/11-Amazon/aws-ios-sdk-2.2.7/frameworks",
+					/Users/ninaqy13/Documents/Turn,
+					to,
+					"Tech/11-Amazon/aws-ios-sdk-2.2.7/frameworks/extras",
+					/Users/ninaqy13/Documents/Turn,
+					to,
+					"Tech/11-Amazon/aws-ios-sdk-2.2.7/frameworks",
+					/Users/ninaqy13/Documents/Turn,
+					to,
+					"Tech/11-Amazon/aws-ios-sdk-2.2.7/frameworks/extras",
+					"$(PROJECT_DIR)/frameworks",
+					"$(PROJECT_DIR)/frameworks/extras",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Amazon S3 /Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "AWS - Amazon S3";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27212E5E1BCEE3D0006AD158 /* Build configuration list for PBXProject "AWS - Amazon S3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27212E841BCEE3D0006AD158 /* Debug */,
+				27212E851BCEE3D0006AD158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27212E861BCEE3D0006AD158 /* Build configuration list for PBXNativeTarget "AWS - Amazon S3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27212E871BCEE3D0006AD158 /* Debug */,
+				27212E881BCEE3D0006AD158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27212E5B1BCEE3D0006AD158 /* Project object */;
+}
